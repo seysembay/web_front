@@ -57,7 +57,7 @@
                       {{ getFormattedDate(lesson.homeworks.due_date) }}
                     </div>
                     <div class="text text_p-small text_default">
-                      <RouterLink :to="{name: 'Homeworks', params: {course_run: id, current_id:lesson.homeworks.id}}">
+                      <RouterLink :to="{name: 'Homeworks', params: {course_run: courseRun.id, current_id:lesson.homeworks.id}}">
                         <a class="btn btn-dim btn-outline-primary">Отправить ДЗ на проверку</a>
                       </RouterLink>
                     </div>

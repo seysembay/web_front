@@ -81,6 +81,7 @@ export default {
     },
     getOwnHomeworks(id) {
       CourserunService.getOwnHomeworks(id).then((response) => {
+        console.log(response)
         this.homeworks = response.data
       }, (error) => {
         console.error(error)

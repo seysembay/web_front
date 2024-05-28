@@ -8,7 +8,7 @@ import Homeworks from "../components/views/app/Homeworks.vue";
 import Register from "../components/views/app/Register.vue";
 import CourseDetails from "../components/views/Course/CourseDetails.vue";
 import LearningDetails from "../components/views/LearningDetails.vue";
-
+import Profile from "../components/views/app/Profile.vue";
 const MyCourses = () => import("../components/views/Course/MyCourses.vue")
 
 
@@ -21,6 +21,7 @@ const router = createRouter({
         {path: '/login', component: Login},
         {path: '/register', component: Register},
         {path: '/contacts', component: Contacts},
+        {path: '/profile', component: Profile},
         {path: '/mycourses', component: MyCourses},
         {path: '/course/:id', name: 'Course', props: true, component: CourseDetails},
         {path: '/learning/:id', name: 'Learning', props: true, component: LearningDetails},

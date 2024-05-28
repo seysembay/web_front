@@ -28,9 +28,9 @@
         <div class="dropdown-inner">
           <ul class="link-list">
             <li>
-              <a href="html/invest/profile.html">
+              <RouterLink to="/profile">
                 <span>Мой профиль</span>
-              </a>
+              </RouterLink>
             </li>
           </ul>
         </div>
